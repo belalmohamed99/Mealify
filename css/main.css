@@ -1,0 +1,311 @@
+nav {
+  background-color: white;
+}
+nav .container {
+  padding: 0.5625rem 0.3125rem;
+}
+nav #btnMode i {
+  font-weight: 900;
+  font-size: 25px;
+}
+nav a::after {
+  content: ".";
+  color: #e61414;
+}
+nav .navbar-brand {
+  font-size: 30px;
+  font-weight: 700;
+}
+nav ul li {
+  font-size: 17px;
+  font-family: 600;
+  position: relative;
+}
+nav .nav-link:hover {
+  color: black;
+  font-weight: 700;
+}
+nav ul li a::after {
+  content: "";
+  background-color: #e61414;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+nav ul li a:hover::after {
+  width: 80%;
+}
+header {
+  background-color: #eeeeee;
+}
+header .header-caption h1 {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 65px;
+}
+header .header-caption p {
+  font-family: "Open Sans", sans-serif;
+}
+header .header-links button {
+  border-radius: 0 100vh 100vh;
+}
+header .header-links button:hover {
+  background-color: #e61414;
+}
+header .header-links a {
+  font-weight: 600;
+  color: black;
+}
+header .header-icon a:hover {
+  color: #ce1212;
+}
+header .header-icon,
+.play-icon {
+  position: relative;
+}
+header .header-icon .circle {
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  width: 36px;
+  height: 63px;
+  border: #e61414 9px solid;
+  border-right: transparent;
+  border-radius: 100px 0 0 100px;
+}
+header .header-image img {
+  filter: drop-shadow(1px 1px 20px gray);
+}
+header .header-image img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.card {
+  border: none;
+}
+.card-image {
+  position: relative;
+}
+.card .card_image--active::before {
+  content: "";
+  width: 100%;
+  height: 50px;
+  background-image: url(../img/chefs/team-shape.svg);
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+
+.chefs .card:hover {
+  transform: scale(1.09);
+  transition: all 0.5s;
+}
+.card .card_image--active .social-icons {
+  padding-top: 5px;
+  width: 40px;
+  position: absolute;
+  right: 20px;
+  top: 10%;
+  flex-direction: column;
+  background-color: RGBA(255, 255, 255, 0.3);
+  transform: translatex(150%);
+}
+.chefs .card:hover .social-icons {
+  transform: translatex(0);
+  transition: all 1s 0.5s;
+}
+.card .card_image--active .social-icons i {
+  height: 30px;
+  color: rgba(55, 55, 63, 0.4);
+  font-size: 18px;
+  font-weight: 400;
+}
+.chefs .card .social-icons i:hover {
+  height: 30px;
+  color: black;
+  font-size: 18px;
+}
+.headerSection-p {
+  font-family: "Amatic SC", sans-serif;
+  font-style: normal;
+  font-size: 50px;
+}
+.headerSection-h {
+  font-family: inte;
+  font-style: normal;
+  font-size: 14px;
+  color: #7f7f90;
+}
+main .gallery {
+  background-color: #eeeeee;
+}
+.image-container {
+  border: 5px solid white;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.gallery_image--active img {
+  display: block;
+}
+.gallery picture:hover img {
+  display: block;
+  transform: scale(1.5);
+  transition: all 0.5s;
+}
+picture {
+  position: relative;
+}
+.gallery .gallery-images .layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: grid;
+  place-items: center;
+  align-content: center;
+  text-align: center;
+  color: white;
+  transform: translateY(100%);
+}
+.gallery .image-container:hover .layer {
+  display: block;
+  transform: translateY(0);
+  transition: all 0.5s;
+}
+
+.contact .details .contact-card {
+  background-color: #f5f5f5;
+  padding: 10px;
+  height: 100px;
+}
+.contact .row .details h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #7d7d7d;
+}
+.contact .row .details a {
+  text-decoration: none;
+  color: #7d7d7d;
+}
+
+.contact .details .icon {
+  background-color: #e61414;
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.contact .form-group input {
+  padding: 0.9375rem 0.9375rem;
+}
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/textured-metal-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+footer .logo h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+}
+footer .logo h2:after {
+  content: ".";
+  color: #e61414;
+}
+
+footer .logo img {
+  width: 40px;
+}
+footer .social-links i {
+  color: white;
+  font-size: 24px;
+}
+
+footer h3 {
+  border-bottom: 2px #595959 solid;
+  font-size: 19px;
+  font-weight: 700;
+}
+footer .subscribe .btn-main {
+  background-color: #e61414;
+  padding: 0.4rem;
+  margin-bottom: 4px;
+}
+footer .subscribe ul li {
+  width: 50%;
+}
+footer .subscribe ul li:hover {
+  transform: translateX(10px);
+  transition: all 0.5s;
+  background-color: #222222;
+}
+footer .subscribe ul li::before {
+  font-family: "FontAwesome";
+  content: "\f105";
+  padding: 0 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+footer .footer-contact li {
+  margin-bottom: 10px;
+}
+footer .footer-contact li i {
+  padding-right: 10px;
+  color: #e61414;
+  font-size: 1.375rem;
+}
+
+@media only screen and (max-width: 600px) {
+  footer .btn-main {
+    margin: 5px 0;
+    width: 75%;
+  }
+}

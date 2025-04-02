@@ -1,0 +1,91 @@
+::selection {
+  background-color: red;
+  color: white;
+}
+/* The scrollbar's background (the track) */
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+  background-color: #706b6b; /* Optional: background of the scrollbar track */
+}
+
+/* The part that the user drags (the thumb) */
+::-webkit-scrollbar-thumb {
+  background-color: #131111; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Make the thumb rounder */
+}
+/* On hover, change the color of the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #281f1f; /* Darker color when hovered */
+}
+.container {
+  padding: 70px 0;
+}
+p span {
+  color: #e61414;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.mode-black {
+  background-color: black !important;
+}
+.mode-black p,
+.bg-dark p {
+  color: #adadad !important;
+}
+.mode-black a,
+.mode-black h3,
+.mode-black #btnMode i,
+.bg-dark .header-icon a {
+  color: white !important;
+}
+
+.mode-black .card_image--active::before {
+  background-image: url(../img/chefs/team-shape-dark.svg) !important;
+}
+.mode-black ul li a::after {
+  background-color: #d78c23;
+}
+.mode-black .nav-link:hover {
+  color: white;
+}
+.mode-black .brand-logo::after {
+  color: #d78c23;
+}
+
+.toYellow {
+  background-color: #d78c23 !important;
+  color: black;
+}
+.toYellow i {
+  background-color: #d78c23 !important;
+  color: black;
+}
+footer ul li .toYellow {
+  color: #d78c23 !important;
+  background-color: black !important;
+}
+.darker,
+.bg-dark .header-icon i {
+  background-color: #202020 !important;
+}
+.darker span,
+.mode-black span,
+.bg-dark span {
+  color: #d78c23;
+}
+.darker p,
+.bg-dark h1,
+.bg-dark .header-icon i {
+  color: white;
+}
+.bg-dark .header-icon i {
+  background-color: black;
+}
+.bg-dark .header-icon .circle {
+  border-color: #d78c23;
+}
+.special .logo h2:after {
+  color: #d78c23;
+}
